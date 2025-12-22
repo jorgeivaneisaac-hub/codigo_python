@@ -1,0 +1,10 @@
+import os
+
+def suma(a, b):
+    resultado = a + b
+    return resultado
+x=int(input("Introduce x"))
+y=int(input("Introduce y"))
+print("El resultado es")
+print(suma(x,y))
+
