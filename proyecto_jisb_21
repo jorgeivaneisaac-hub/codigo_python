@@ -1,0 +1,6 @@
+import os
+import time
+print ("Hola")
+time.sleep(20)
+os.system ("clear")
+
