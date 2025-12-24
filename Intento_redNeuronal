@@ -23,6 +23,12 @@ plt.plot(historial.history["loss"])
 plt.show()
 
 print("Hagamos una predicion")
-resultado=modelo.predic([100.0])
-print("El resultado es"+str(resultado)+"farenheit")
+a=float(input("Escribe el valor en celsius"))
+prediccion=(modelo.predict(np.array([[a]])))
+resultado=round (float(prediccion[0][0]))
+print("El resultado es"+str(resultado)+ farenheit")
 
+pesos, sesgo = modelo.layers[0].get_weights()
+
+print(f"El peso asignado es: {round (pesos[0][0],2)}")
+print(f"El sesgo (bias) asignado es: {round(sesgo[0])}")
