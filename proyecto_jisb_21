@@ -1,6 +1,0 @@
-import os
-for time import sleep
-print ("Hola")
-sleep(20)
-os.system ("clear")
-
